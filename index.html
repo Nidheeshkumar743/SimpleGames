@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects Showcase</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    .header {
+      background-color: #007bff;
+      padding: 1.5rem 0;
+      text-align: center;
+      color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .container {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .project-card {
+      flex: 1;
+      max-width: 400px;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      min-height: 500px; /* Set a minimum height to ensure uniform size */
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-image {
+      width: 100%;
+      height: auto;
+      max-height: 250px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover .project-image {
+      transform: scale(1.05);
+    }
+
+    .project-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #007bff;
+    }
+
+    .project-description {
+      margin: 10px 0;
+      color: #555;
+      flex: 1; /* Allow the description to grow if needed */
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      color: #ffffff;
+      background-color: #007bff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .project-link:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 680px) {
+      .container {
+        flex-direction: column;
+        padding: 1rem;
+      }
+
+      .project-card {
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Explore My Projects</h1>
+    <p>Check out my custom simple games</p>
+  </header>
+  <div class="container">
+    <div class="project-card">
+      <img class="project-image" src="canvas.JPG" alt="Painting Project Screenshot">
+      <div class="project-title">Painting</div>
+      <p class="project-description">Create beautiful paintings.</p>
+      <a class="project-link" href="https://nidheeshkumar743.github.io/paint/" target="_blank">Open Game</a>
+    </div>
+
+    <div class="project-card">
+      <img class="project-image" src="guess.JPG" alt="Guess Number Project Screenshot">
+      <div class="project-title">Guess The Number</div>
+      <p class="project-description">A fun number guessing game.</p>
+      <a class="project-link" href="https://nidheeshkumar743.github.io/Guess_number/" target="_blank">Open Game</a>
+    </div>
+
+    <div class="project-card">
+      <img class="project-image" src="hangman1.JPG" alt="HangMan Project Screenshot">
+      <div class="project-title">HangMan</div>
+      <p class="project-description">A classic word guessing game.</p>
+      <a class="project-link" href="https://nidheeshkumar743.github.io/HangMan/" target="_blank">Open Game</a>
+    </div>
+  </div>
+</body>
+
+</html>
